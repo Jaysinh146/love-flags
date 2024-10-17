@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Flag or Green Flag Relationship Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>❤️ Red Flag or Green Flag? 💚</h1>
+    <p class="intro">Find out if you're dating a green flag 🌿 or red flag 🚩! Answer the questions below to see the result. 😉</p>
+
+    <!-- Couple Information -->
+    <div id="coupleInfo">
+      <h2>Enter Couple's Info 💑</h2>
+
+      <div class="input-group">
+        <label for="quizTaker">Who is taking the quiz? 👇</label>
+        <select id="quizTaker">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <!-- Male Name & Gender -->
+      <div class="input-group">
+        <label for="maleName">Male's Name 👦</label>
+        <input type="text" id="maleName" placeholder="Enter His Name">
+      </div>
+      <div class="input-group">
+        <label for="maleGender">Gender Identity 👨‍🦱</label>
+        <select id="maleGender">
+          <option value="male">Male</option>
+          <option value="non-binary">Non-Binary</option>
+          <option value="prefer-not-to-say">Prefer Not to Say</option>
+        </select>
+      </div>
+
+      <!-- Female Name & Gender -->
+      <div class="input-group">
+        <label for="femaleName">Female's Name 👧</label>
+        <input type="text" id="femaleName" placeholder="Enter Her Name">
+      </div>
+      <div class="input-group">
+        <label for="femaleGender">Gender Identity 👩‍🦰</label>
+        <select id="femaleGender">
+          <option value="female">Female</option>
+          <option value="non-binary">Non-Binary</option>
+          <option value="prefer-not-to-say">Prefer Not to Say</option>
+        </select>
+      </div>
+
+      <button id="startQuiz">Start the Quiz 🚀</button>
+    </div>
+
+    <!-- Quiz will appear here dynamically -->
+    <div id="quiz" style="display: none;"></div>
+
+    <!-- Progress Bar -->
+    <div id="progress" style="display: none;">
+      <div id="progressBar"></div>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result" style="display: none;">
+      <h2>Results</h2>
+      <div class="bar">
+        <div id="greenBar"></div>
+        <div id="redBar"></div>
+      </div>
+      <p id="percentage"></p>
+
+      <!-- Button to download and share the result -->
+      <button id="downloadResult">Download Result as PNG 📸</button>
+      <button id="shareResult">Share Result 📤</button>
+    </div>
+
+    <canvas id="resultCanvas" style="display: none;"></canvas>
+  </div>
+
+  <footer>
+    <p>Made With ❤️ By <strong>Jaysinh</strong></p>
+    <p>&copy; 2024</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
